@@ -6,24 +6,42 @@
 - We will finish this class by giving you the chance to use what you have learned in a practical context, by creating data visualizations from raw data. 
 - Choose a dataset of interest from the [City of Toronto’s Open Data Portal](https://www.toronto.ca/city-government/data-research-maps/open-data/) or [Ontario’s Open Data Catalogue](https://data.ontario.ca/). 
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
-- For each visualization, describe and justify: 
-    > What software did you use to create your data visualization?
+- For each visualization, describe and justify:
 
-    > Who is your intended audience? 
+For this assignment, I used the dataset "Ontario top baby names (female)" from Ontario's Open Data Catalogue: https://data.ontario.ca/dataset/ontario-top-baby-names-female.
+
+Here is the visualization:
+https://public.tableau.com/app/profile/danica.leung/viz/Ontariotopbabynamesfemale/Dashboard1#1
+
+![alt text](https://file%2B.vscode-resource.vscode-cdn.net/Users/danicaleung/DSI_Repo_Assignments/visualization/02_activities/assignments/assignment_4_tableau_visualization.png?version%3D1733124398071)
     
-    > What information or message are you trying to convey with your visualization? 
+    
+    > What software did you use to create your data visualization?
+    I used Tableau Public to create this visualization. I used Python and VS Code to process and sort the original dataset to the parameters I wanted. I exported a new csv file, uploaded it to Tableau, and created this graph. 
+
+    > Who is your intended audience?
+    The intended audience is for anyone looking for a quick visual of the most common female names in Ontario in the last 110 years or so.  
+    
+    > What information or message are you trying to convey with your visualization?
+    In this visualization, I'm trying to show the top 20 female names for babies in Ontario spanning from 1913 to 2022.  
     
     > What design principles (substantive, perceptual, aesthetic) did you consider when making your visualization? How did you apply these principles? With what elements of your plots? 
+    Having already created a comprehensive graph using Python, I thought it would be best to give a quick and easy visualization using Tableau. Since I narrowed down the dataset to 20 names, I made a word bubble graph to make the data aesthetically pleasing, clean, and easy to interpret. It may not be substantive considering how much information was in the original dataset, but it provides the audience with quick information.
     
     > How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization? 
+    To ensure reproducibility, I used python coding to sort the dataset by the most frequently used names. I created a new dataframe and exported it as a csv file, which was then uploaded to Tableau as the source data. By following the code, you should be able to recreate the data from the csv file (which is found under the sheet tab in Tableau) and then reproduce the visualization.
     
-    > How did you ensure that your data visualization is accessible?  
+    > How did you ensure that your data visualization is accessible?
+    To make it accessible, I chose a colour scheme that is easier to read by people with colour-blindness. I kept the labels in each bubble simple by only including the name and the year it was the most popular. The title of the visualization describes the exact message I'm trying to convey. Also, the size of the bubbles tell you how frequent a name was used compared to others without you needing to hover over each mark to see the frequency.
     
-    > Who are the individuals and communities who might be impacted by your visualization?  
+    > Who are the individuals and communities who might be impacted by your visualization? 
+    This visualization can impact anyone. I think it's a visualization that teaches the audience another fun fact about names especially if they know someone personally with one the names shown. 
     
     > How did you choose which features of your chosen dataset to include or exclude from your visualization? 
+    Since I had done a visualization already showing the top names per year, I decided to go in a different direction using Tableau. Because the dataset is based on the frequency of words used, my first thought was to make a word cloud. I know it can be done using Python, but since I was using a new tool with lots of customization options, I decided to try it with Tableau. I originally had planned to layer 3 different datasets together based on different aggregations, but I couldn't familiarize myself quickly enough so I decided to keep it simple. I wanted to know through the 110 year span, which names were the most popular. For someone with a "unique" name like mine, it's something I'm interested in. From there, I simply sorted the data by frequency in descending order and filtered it to the top 20 names. I included the year on each marker as an extra interesting fact about when that name was the most popular. 
     
     > What ‘underwater labour’ contributed to your final data visualization product?
+    In addition to the underwater labour that contributed to the data being collected, stored, and uploaded, there was a big learning curve for me. I had never used any visualiation tools before other than Excel. Even then, creating graphs is not something I did regularly. I had ambitious plans to make a comprehensive, dynamic visual but learning how to use Tableau took longer than I anticipated.
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
